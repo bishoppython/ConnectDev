@@ -100,14 +100,6 @@ tinder-app/
 
 ---
 
-### **Explicação da Correção:**
-
-1.  **Bloco de Código (` ``` `):** Envolver a estrutura inteira em um bloco de código impede que o Markdown tente interpretar símbolos como listas, *links* ou tabelas, forçando-o a renderizar o texto como está.
-2.  **Indentação com `tree`:** A formatação `├──`, `└──` e `│ ` (pipe com espaço) é a convenção padrão do comando `tree` e é extremamente clara visualmente.
-3.  **Emojis e Descrições:** Mantive os emojis e as descrições concisas, mas agora estão dentro do bloco de código, garantindo o alinhamento perfeito.
-````
-
-
 ## 🚀 Como Usar
 
 ### 1️⃣ Primeira Vez no App
