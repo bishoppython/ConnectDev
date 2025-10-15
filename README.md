@@ -55,7 +55,58 @@ ConnectHub é uma plataforma que vai além do namoro tradicional. Aqui você pod
 
 ### 🌳 Estrutura de Diretórios
 
-A estrutura do projeto segue a convenção do Next.js App Router, separando rotas (`app/`), componentes de UI (`components/`) e lógica de negócio (`lib/`).
+```
+
+tinder-app/
+├── 📂 app/                  \# Rotas e páginas principais (Next.js App Router)
+│   ├── 📁 (autenticacao)/    \# Grupo de rotas (Layout sem navegação principal)
+│   │   ├── 📁 auth/          \# Login e Cadastro
+│   │   └── 📁 onboarding/    \# Fluxo de Criação de Perfil
+│   ├── 📁 (principal)/       \# Grupo de rotas (Layout com navegação inferior)
+│   │   ├── 📁 discover/      \# Interface principal de swipe
+│   │   ├── 📁 matches/       \# Lista de Matches
+│   │   ├── 📁 chat/[id]/     \# Chat individual dinâmico
+│   │   └── 📁 profile/       \# Perfil do Usuário
+│   ├── 📄 layout.tsx         \# Layout raiz com Providers globais
+│   ├── 📄 page.tsx           \# Landing Page ou Redirecionamento Inicial
+│   └── 💅 globals.css        \# Estilos globais (Tailwind/CSS)
+│
+├── ⚙️ components/            \# Componentes reutilizáveis de UI
+│   ├── 📄 profile-card.tsx   \# Card de perfil com lógica de swipe
+│   ├── 📄 bottom-nav.tsx     \# Barra de navegação inferior
+│   ├── 📄 match-modal.tsx    \# Modal exibido após um Match
+│   ├── 📄 filter-dialog.tsx  \# Diálogo de Filtros de Busca
+│   └── 🎨 ui/               \# Componentes de baixo nível (shadcn/ui, botões, etc.)
+│
+├── 📚 lib/                  \# Lógica de negócio, Hooks customizados e Contextos
+│   ├── ⚛️ context/           \# Contextos de React (Providers)
+│   │   ├── 📄 auth-context.tsx      \# Gerenciamento de Autenticação
+│   │   ├── 📄 matches-context.tsx   \# Gerenciamento de Matches (estado global)
+│   │   └── 📄 messages-context.tsx  \# Gerenciamento de Mensagens
+│   ├── 📄 types.ts           \# Definições globais de Tipos (TypeScript)
+│   ├── 📄 mock-data.ts       \# Dados de exemplo para desenvolvimento
+│   └── 📄 utils.ts           \# Funções utilitárias diversas
+│
+├── 🛠️ scripts/               \# Scripts de banco de dados ou automação
+│   ├── 📄 01-create-tables.sql   \# Schema inicial do banco
+│   ├── 📄 02-create-functions.sql\# Funções SQL e Stored Procedures
+│   └── 📄 03-enable-rls.sql      \# Configurações de Row Level Security (RLS)
+│
+└── 🖼️ public/               \# Assets estáticos
+├── 📁 images/
+└── 📄 favicon.ico
+
+````
+
+---
+
+### **Explicação da Correção:**
+
+1.  **Bloco de Código (` ``` `):** Envolver a estrutura inteira em um bloco de código impede que o Markdown tente interpretar símbolos como listas, *links* ou tabelas, forçando-o a renderizar o texto como está.
+2.  **Indentação com `tree`:** A formatação `├──`, `└──` e `│ ` (pipe com espaço) é a convenção padrão do comando `tree` e é extremamente clara visualmente.
+3.  **Emojis e Descrições:** Mantive os emojis e as descrições concisas, mas agora estão dentro do bloco de código, garantindo o alinhamento perfeito.
+````
+
 
 ## 🚀 Como Usar
 
