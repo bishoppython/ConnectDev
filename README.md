@@ -53,46 +53,9 @@ ConnectHub é uma plataforma que vai além do namoro tradicional. Aqui você pod
 
 ---
 
-## 🏗️ Estrutura do Projeto
+### 🌳 Estrutura de Diretórios
 
-tinder-app/
-├── 📂 app/                  # Rotas e páginas principais (Next.js App Router)
-│   ├── 📁 (autenticacao)/    # Agrupamento para rotas de auth/onboarding
-│   │   ├── 📁 auth/          # Login e Cadastro
-│   │   └── 📁 onboarding/    # Fluxo de Criação de Perfil
-│   ├── 📁 (principal)/       # Agrupamento para rotas principais (com nav inferior)
-│   │   ├── 📁 discover/      # Interface principal de swipe
-│   │   ├── 📁 matches/       # Lista de Matches
-│   │   ├── 📁 chat/[id]/     # Chat individual dinâmico
-│   │   └── 📁 profile/       # Perfil do Usuário
-│   ├── 📄 layout.tsx         # Layout raiz com Providers globais
-│   ├── 📄 page.tsx           # Landing Page ou Redirecionamento Inicial
-│   └── 💅 globals.css        # Estilos globais (Tailwind/CSS)
-│
-├── ⚙️ components/            # Componentes reutilizáveis de UI
-│   ├── 📄 profile-card.tsx   # Card de perfil com lógica de swipe
-│   ├── 📄 bottom-nav.tsx     # Barra de navegação inferior
-│   ├── 📄 match-modal.tsx    # Modal exibido após um Match
-│   ├── 📄 filter-dialog.tsx  # Diálogo de Filtros de Busca
-│   └── 🎨 ui/               # Componentes de baixo nível (shadcn/ui, botões, inputs)
-│
-├── 📚 lib/                  # Lógica de negócio, Hooks customizados e Contextos
-│   ├── ⚛️ context/           # Contextos de React (Providers)
-│   │   ├── 📄 auth-context.tsx      # Gerenciamento de Autenticação (usuário, login)
-│   │   ├── 📄 matches-context.tsx   # Gerenciamento de Matches (estado global)
-│   │   └── 📄 messages-context.tsx  # Gerenciamento de Mensagens em tempo real
-│   ├── 📄 types.ts           # Definições globais de Tipos (TypeScript)
-│   ├── 📄 mock-data.ts       # Dados de exemplo para desenvolvimento
-│   └── 📄 utils.ts           # Funções utilitárias diversas (formatar data, etc.)
-│
-├── 🛠️ scripts/               # Scripts de banco de dados ou automação
-│   ├── 📄 01-create-tables.sql   # Schema inicial do banco de dados
-│   ├── 📄 02-create-functions.sql# Funções SQL e Stored Procedures
-│   └── 📄 03-enable-rls.sql      # Configurações de Row Level Security (RLS)
-│
-└── 🖼️ public/               # Assets estáticos (imagens, fontes, favicon)
-    ├── 📁 images/
-    └── 📄 favicon.ico
+A estrutura do projeto segue a convenção do Next.js App Router, separando rotas (`app/`), componentes de UI (`components/`) e lógica de negócio (`lib/`).
 
 ## 🚀 Como Usar
 
